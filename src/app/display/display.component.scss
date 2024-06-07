@@ -1,119 +1,87 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #f5f5f5;
 }
 
 header {
     background-color: #007bff;
     color: white;
-    padding: 15px;
-    width: 100%;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
-header nav ul {
-    list-style: none;
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-header nav ul li {
-    margin-right: 20px;
+nav ul li {
+    margin-left: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .container {
     display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px;
 }
 
 aside {
-    background-color: #343a40;
-    color: white;
     width: 200px;
+    background-color: #333;
+    color: white;
     padding: 20px;
-    border-radius: 5px;
 }
 
 aside ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 aside ul li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 aside ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 main {
-    background-color: white;
-    flex-grow: 1;
+    flex: 1;
     padding: 20px;
-    border-radius: 5px;
-    margin-left: 20px;
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .card {
-    background-color: #e9ecef;
+    background-color: #f1f1f1;
     padding: 20px;
     border-radius: 5px;
-    width: calc(25% - 20px);
-    box-sizing: border-box;
     text-align: center;
-    margin-right: 20px;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .card h2 {
-    margin: 0;
-    color: #495057;
-}
-
-.card p {
-    margin: 10px 0 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: #007bff;
+    margin: 0 0 10px;
 }
 
 .charts {
-    display: flex;
-    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .chart {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 5px;
-    width: calc(100% - 20px);
-    box-sizing: border-box;
+    margin: 20px 0;
 }

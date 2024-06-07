@@ -1,0 +1,30 @@
+<div class="chart">
+    <h2>User Growth</h2>
+    <canvas *ngIf="isBrowser"  baseChart
+            [datasets]="userGrowthData"
+            [labels]="userGrowthLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            [type]="'line'">
+    </canvas>
+  </div>
+  <div class="chart">
+    <h2>Signup Sources</h2>
+    <canvas *ngIf="isBrowser"   baseChart
+            [datasets]="signupSourcesData"
+            [labels]="signupSourcesLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            [type]="'bar'">
+    </canvas>
+  </div>
+  <div class="chart">
+    <h2>User Demographics</h2>
+    <canvas *ngIf="isBrowser"  baseChart
+            [datasets]="userDemographicsData"
+            [labels]="userDemographicsLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            [type]="'pie'">
+    </canvas>
+  </div>
